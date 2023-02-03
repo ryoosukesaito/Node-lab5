@@ -58,6 +58,9 @@ exports.getEditRecipe = (req,res,next) => {
 
     const editRecipes = Recipe.findById(id)
     console.log(editRecipes);
-    res.render('edit.recipe', { recipes: editRecipes})
+    res.render('edit', { recipe : editRecipes})
 }
 
+exports.postEditRecipe = (req,res,next) => {
+    
+}
