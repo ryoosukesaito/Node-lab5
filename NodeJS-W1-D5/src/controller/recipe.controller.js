@@ -52,3 +52,7 @@ exports.getRecipeById = (req,res,next) => {
 
     res.json(fetchRecipe)
 }
+
+exports.editRecipe = (req,res,next) => {
+    console.log('Editing recipe')
+}
