@@ -22,7 +22,7 @@ app.use(express.static(path.join(rootDirectory, 'public')));
 
 //routes
 app.use('/', indexRoute);
-app.use('/recipes', recipeRoutes)
+app.use('/recipes', recipeRoutes);
 
 //catch-all route/middleware
 app.use((req,res,next) => {

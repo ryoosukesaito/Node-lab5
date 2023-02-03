@@ -6,7 +6,7 @@ exports.getRecipesPage = (req,res,next) => {
         if(recipeData.message){
             res.render('400', { title: "Something went wrong", message: recipeData.message })
         }
-
+        console.log(recipeData);
         res.render('recipes', { recipes: recipeData })
     })
 }
@@ -53,6 +53,11 @@ exports.getRecipeById = (req,res,next) => {
     res.json(fetchRecipe)
 }
 
-exports.editRecipe = (req,res,next) => {
-    console.log('Editing recipe')
+exports.getEditRecipe = (req,res,next) => {
+    const id = req.params.id;
+
+    const editRecipes = Recipe.findById(id)
+    console.log(editRecipes);
+    res.render('edit.recipe', { recipes: editRecipes})
 }
+
