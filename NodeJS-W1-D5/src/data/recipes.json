@@ -333,5 +333,126 @@
     "instruction": [
       "test"
     ]
+  },
+  {
+    "id": 8,
+    "name": "Spicy Sausage Pasta",
+    "ingredient": [
+      {
+        "name": "spicy sausage",
+        "quantity": "12 oz"
+      },
+      {
+        "name": "onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "bell pepper",
+        "quantity": "1"
+      },
+      {
+        "name": "garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "crushed red pepper flakes",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "dried oregano",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "dried basil",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "salt",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "crushed tomatoes",
+        "quantity": "28 oz can"
+      },
+      {
+        "name": "penne pasta",
+        "quantity": "1 lb"
+      },
+      {
+        "name": "grated parmesan cheese",
+        "quantity": "1 cup"
+      }
+    ],
+    "instruction": [
+      "2. In a large skillet, cook the sausage over medium heat until browned. Drain any excess fat.",
+      "3. Add the onion, bell pepper, and garlic to the skillet and cook until softened, about 5 minutes.",
+      "4. Stir in the red pepper flakes, oregano, basil, salt, and black pepper.",
+      "6. Add the cooked pasta to the skillet and toss to coat with the sauce.",
+      "7. Serve the pasta in bowls and top with grated Parmesan cheese."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Spicy Sausage Pasta",
+    "ingredient": [
+      {
+        "name": "spicy sausage",
+        "quantity": "12 oz"
+      },
+      {
+        "name": "onion",
+        "quantity": "1 large"
+      },
+      {
+        "name": "bell pepper",
+        "quantity": "1"
+      },
+      {
+        "name": "garlic",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "crushed red pepper flakes",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "dried oregano",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "dried basil",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "salt",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "crushed tomatoes",
+        "quantity": "28 oz can"
+      },
+      {
+        "name": "penne pasta",
+        "quantity": "1 lb"
+      },
+      {
+        "name": "grated parmesan cheese",
+        "quantity": "1 cup"
+      }
+    ],
+    "instruction": [
+      "1. Cook the pasta according to package instructions until al dente. Drain and set aside.",
+      "3. Add the onion, bell pepper, and garlic to the skillet and cook until softened, about 5 minutes.",
+      "6. Add the cooked pasta to the skillet and toss to coat with the sauce.",
+      "7. Serve the pasta in bowls and top with grated Parmesan cheese."
+    ]
   }
 ]

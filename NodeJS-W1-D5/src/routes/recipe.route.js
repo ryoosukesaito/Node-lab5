@@ -10,7 +10,7 @@ router.get('/create', getAddRecipePage)
 router.get('/:id', getRecipeById)
 
 router.get('/:id/edit', getEditRecipe)
-router.post('/:id/edit')
+router.post('/:id/edit',)
 
 router.delete('/delete')
 

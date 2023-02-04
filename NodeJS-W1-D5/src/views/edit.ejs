@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit Recipe</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <div class="container mx-auto p-4">
         <h1 class="text-2xl font-medium mb-4">Edit Recipe</h1>
         <form action="/recipes/save" method="POST">
             <div class="mb-4">
                 <label class="block font-medium text-sm mb-2" for="name">Name:</label>
-                <input class="border border-gray-400 p-2 rounded-lg w-full" type="text" name="name" id="name" value="<%= recipe.name%>" required>
+                <input class="border border-gray-400 p-2 rounded-lg w-full" type="text" name="name" id="name"
+                    value="<%= recipe.name%>" required>
             </div>
             <div class="mb-4">
                 <label class="block font-medium text-sm mb-2" for="ingredients">Ingredients:</label>
                 <div class="ingredient-group">
-                    <% recipe.ingredient.forEach(ingredient => {%>
-                    <div class="mb-3">
-                        <input type="text" class="border border-gray-400 p-2 rounded-lg w-1/2 mr-2" placeholder="Ingredient" name="ingredient" value="<%= ingredient.name%>">
-                        <input type="text" class="border border-gray-400 p-2 rounded-lg w-1/2" placeholder="Quantity" name="quantity" value="<%= ingredient.quantity %>">
-                    </div>
-                    <% });%>
+                    <% recipe.ingredient.forEach(ingredient=> {%>
+                        <div class="mb-3">
+                            <input type="text" class="border border-gray-400 p-2 rounded-lg w-1/2 mr-2"
+                                placeholder="Ingredient" name="ingredients" value="<%= ingredient.name%>">
+                            <input type="text" class="border border-gray-400 p-2 rounded-lg w-1/2"
+                                placeholder="Quantity" name="quantity" value="<%= ingredient.quantity %>">
+                        </div>
+                        <% });%>
                 </div>
-                <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg" onclick="addIngredient()">Add Ingredient</button>
+                <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
+                    onclick="addIngredient()">Add Ingredient</button>
             </div>
             <div class="mb-4">
                 <label class="block font-medium text-sm mb-2">Instructions:</label>
-                <% recipe.instruction.forEach(instruction =>{ %>
-                <div id="instruction-<%=instruction.id%>" class="instruction-group">
-                    <div class="mb-2">
-                        <input class="border border-gray-400 p-2 rounded-lg w-full" type="text" name="instruction" value="<%= instruction %>" required>
-                        <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg" type="button" onclick="removeInstruction(`<%= instruction.id%>`)">Remove</button>
+                <% recipe.instruction.forEach((instruction,index)=>{ %>
+                    <div id="instruction-<%=index%>" class="instruction-group">
+                        <div class="mb-2">
+                            <input class="border border-gray-400 p-2 rounded-lg w-full" type="text" name="instructions"
+                                value="<%= instruction %>" required>
+                            <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg"
+                                type="button" onclick="removeInstruction(`<%= index%>`)">Remove Instruction</button>
+                        </div>
                     </div>
-                </div>
-                <% })%>
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg" type="button" onclick="addInstruction()">Add Instruction</button>
+                    <% })%>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
+                            type="button" onclick="addInstruction()">Add Instruction</button>
             </div>
             <div class="text-center">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg" type="submit">Save</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
+                    type="submit">Save</button>
             </div>
         </form>
     </div>
@@ -70,9 +80,9 @@
 
         function removeInstruction(index) {
             const instructionGroup = document.querySelector(`#instruction-${index}`);
-            console.log(index);
             instructionGroup.remove();
         }
     </script>
 </body>
+
 </html>
