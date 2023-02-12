@@ -38,7 +38,7 @@
             <div class="text-neutral-600 mt-3 group-open:animate-fadeIn">
               <p class="p-3 text-gray-900">Ingredients:</p>
               <ol class="p-3">
-                <% recipe.ingredient.forEach(ingredient=> { %>
+                <% recipe.ingredients.forEach(ingredient=> { %>
                   <li class="text-xs font-light mb-1">
                     <span class="font-bold">
                       <%= ingredient.name %>
@@ -48,7 +48,7 @@
               </ol>
               <p class="p-3 text-gray-900">Instructions:</p>
               <ol class="p-3">
-                <% recipe.instruction.forEach(instruction=> { %>
+                <% recipe.instructions.forEach(instruction=> { %>
                   <li class="text-xs font-light mb-1">
                     <%= instruction %>
                   </li>
@@ -60,7 +60,7 @@
             <div class="w-full flex">
               <a href="/recipes/<%=recipe.id%>/edit"
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-1">Edit</a>
-              <form action="" method="POST">
+              <form action="/recipes/delete/<%= recipe.id %>?_method=DELETE" method="POST">
                 <button type="submit"
                   class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mx-1">DELETE</button>
               </form>

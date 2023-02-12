@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Spicy Sausage Pasta",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "spicy sausage",
         "quantity": "12 oz"
@@ -52,7 +52,7 @@
         "quantity": "1 cup"
       }
     ],
-    "instruction": [
+    "instructions": [
       "1. Cook the pasta according to package instructions until al dente. Drain and set aside.",
       "2. In a large skillet, cook the sausage over medium heat until browned. Drain any excess fat.",
       "3. Add the onion, bell pepper, and garlic to the skillet and cook until softened, about 5 minutes.",
@@ -65,7 +65,7 @@
   {
     "id": 2,
     "name": "Lemon Garlic Shrimp",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "jumbo shrimp",
         "quantity": "1 lb, peeled and deveined"
@@ -103,7 +103,7 @@
         "quantity": "for serving"
       }
     ],
-    "instruction": [
+    "instructions": [
       "1. In a large bowl, whisk together the olive oil, lemon juice, garlic, oregano, thyme, salt, and pepper.",
       "2. Add the shrimp to the bowl and toss to coat in the marinade.",
       "3. Cover the bowl with plastic wrap and refrigerate for at least 30 minutes, or up to 2 hours.",
@@ -114,7 +114,7 @@
   {
     "id": 3,
     "name": "Lemon Herb Chicken",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "chicken breasts",
         "quantity": "4"
@@ -148,7 +148,7 @@
         "quantity": "1 tsp"
       }
     ],
-    "instruction": [
+    "instructions": [
       "1. In a small bowl, whisk together the lemon juice, olive oil, thyme, oregano, basil, salt, and pepper.",
       "2. Place the chicken in a large resealable bag and pour the marinade over it. Seal the bag and toss to coat the chicken.",
       "3. Marinate the chicken in the refrigerator for at least 30 minutes, or up to 2 hours.",
@@ -160,7 +160,7 @@
   {
     "id": 4,
     "name": "Chickpea Curry",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "oil",
         "quantity": "2 tbsp"
@@ -218,7 +218,7 @@
         "quantity": "1/4 cup"
       }
     ],
-    "instruction": [
+    "instructions": [
       "1. In a large pot or Dutch oven, heat the oil over medium heat.",
       "2. Add the onion and cook until softened, about 5 minutes.",
       "3. Stir in the ginger, garlic, cumin, coriander, turmeric, cinnamon, pepper, and salt.",
@@ -232,7 +232,7 @@
   {
     "id": 5,
     "name": "Beef Stroganoff",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "beef sirloin",
         "quantity": "1 lb"
@@ -282,7 +282,7 @@
         "quantity": "1/4 cup"
       }
     ],
-    "instruction": [
+    "instructions": [
       "1. Cut the beef sirloin into thin strips and season with salt and pepper.",
       "2. Place the flour in a shallow dish and coat the beef strips in the flour.",
       "3. In a large skillet, heat the oil over medium-high heat.",
@@ -299,7 +299,7 @@
   {
     "id": 6,
     "name": "Karaage",
-    "ingredient": [
+    "ingredients": [
       {
         "name": "Chicken",
         "quantity": "500g"
@@ -309,150 +309,12 @@
         "quantity": "100g"
       }
     ],
-    "instruction": [
+    "instructions": [
       "Pour powder onto a bowl and mix with 100cc water",
       "Cut slices of chicken in bite size",
       "Marinate the chicken onto the batter",
       "Leave it to marinate for 30minutes",
       "DEEP FRY AWAY!!!"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "test",
-    "ingredient": [
-      {
-        "name": "test",
-        "quantity": "test"
-      },
-      {
-        "name": "fafa",
-        "quantity": "afafa"
-      }
-    ],
-    "instruction": [
-      "test"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Spicy Sausage Pasta",
-    "ingredient": [
-      {
-        "name": "spicy sausage",
-        "quantity": "12 oz"
-      },
-      {
-        "name": "onion",
-        "quantity": "1 large"
-      },
-      {
-        "name": "bell pepper",
-        "quantity": "1"
-      },
-      {
-        "name": "garlic",
-        "quantity": "3 cloves"
-      },
-      {
-        "name": "crushed red pepper flakes",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "dried oregano",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "dried basil",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "salt",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "black pepper",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "crushed tomatoes",
-        "quantity": "28 oz can"
-      },
-      {
-        "name": "penne pasta",
-        "quantity": "1 lb"
-      },
-      {
-        "name": "grated parmesan cheese",
-        "quantity": "1 cup"
-      }
-    ],
-    "instruction": [
-      "2. In a large skillet, cook the sausage over medium heat until browned. Drain any excess fat.",
-      "3. Add the onion, bell pepper, and garlic to the skillet and cook until softened, about 5 minutes.",
-      "4. Stir in the red pepper flakes, oregano, basil, salt, and black pepper.",
-      "6. Add the cooked pasta to the skillet and toss to coat with the sauce.",
-      "7. Serve the pasta in bowls and top with grated Parmesan cheese."
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Spicy Sausage Pasta",
-    "ingredient": [
-      {
-        "name": "spicy sausage",
-        "quantity": "12 oz"
-      },
-      {
-        "name": "onion",
-        "quantity": "1 large"
-      },
-      {
-        "name": "bell pepper",
-        "quantity": "1"
-      },
-      {
-        "name": "garlic",
-        "quantity": "3 cloves"
-      },
-      {
-        "name": "crushed red pepper flakes",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "dried oregano",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "dried basil",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "salt",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "black pepper",
-        "quantity": "1 tsp"
-      },
-      {
-        "name": "crushed tomatoes",
-        "quantity": "28 oz can"
-      },
-      {
-        "name": "penne pasta",
-        "quantity": "1 lb"
-      },
-      {
-        "name": "grated parmesan cheese",
-        "quantity": "1 cup"
-      }
-    ],
-    "instruction": [
-      "1. Cook the pasta according to package instructions until al dente. Drain and set aside.",
-      "3. Add the onion, bell pepper, and garlic to the skillet and cook until softened, about 5 minutes.",
-      "6. Add the cooked pasta to the skillet and toss to coat with the sauce.",
-      "7. Serve the pasta in bowls and top with grated Parmesan cheese."
     ]
   }
 ]

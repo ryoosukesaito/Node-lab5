@@ -63,10 +63,58 @@ exports.getEditRecipe = (req, res, next) => {
   const id = req.params.id;
 
   const editRecipes = Recipe.findById(id);
-  console.log(editRecipes);
+  // console.log(editRecipes);
   res.render("edit", { recipe: editRecipes });
 };
 
 exports.postEditRecipe = (req, res, next) => {
+  const id = +req.params.id;
   let { name, ingredients, quantity, instructions } = req.body;
+  
+  if(!Array.isArray(ingredients)){
+    ingredients = [ingredients];
+  }
+
+  if(!Array.isArray(quantity)){
+    quantity = [quantity];
+  }
+
+  if(!Array.isArray(instructions)){
+    instructions = [instructions];
+  }
+
+  const reMappedIngredients = ingredients.map((ingredient, index) =>{
+    return {
+      name: ingredient,
+      quantity: quantity[index]
+    }
+  })
+
+  const updatedRecipe = {
+    id,
+    name,
+    ingredients:reMappedIngredients,
+    instructions
+  }
+  console.log(instructions);
+
+  Recipe.updateRecipeById(updatedRecipe, ({ message, status}) => {
+    if(status === 200) {
+      res.redirect("/recipes");
+    } else {
+      res.status(status).send(message);
+    }
+  })
+
+};
+
+exports.deleteRecipe = (req, res, next) => {
+  Recipe.deleteRecipeById( req.params.id, ({message, status}) => {
+    if(status === 200){
+      res.redirect("/recipes");
+    }else {
+      res.status(status).send(message);
+    }
+  })
+
 };
